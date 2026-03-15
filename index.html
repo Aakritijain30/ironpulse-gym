@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!-- ============================================================
-     IRONPULSE GYM - Single Page Website
-     Structure:
-       1. HTML  — lines marked with [HTML]
-       2. CSS   — inside <style> tag (lines marked with [CSS])
-       3. JS    — inside <script> tag (lines marked with [JS])
-     ============================================================ -->
 
 <html lang="en">
 <head>
@@ -18,7 +11,7 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 
 <style>
-/* ── [CSS] CSS VARIABLES ─────────────────────────────── */
+
 :root {
   --orange: #f97316;
   --orange-dark: #ea6100;
@@ -32,8 +25,6 @@
   --font-display: 'Barlow Condensed', sans-serif;
   --font-body: 'Barlow', sans-serif;
 }
-
-/* ── [CSS] RESET & BASE ──────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -46,7 +37,6 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
 
-/* ── [CSS] UTILITY ───────────────────────────────────── */
 .orange { color: var(--orange); }
 .section-label {
   font-family: var(--font-display);
@@ -101,7 +91,6 @@ img { max-width: 100%; display: block; }
 .btn-outline:hover { background: #fff; color: #111; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
 
-/* ── [CSS] NAVBAR ────────────────────────────────────── */
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -175,7 +164,6 @@ nav {
   .hamburger { display: flex; }
 }
 
-/* ── [CSS] HERO SECTION ──────────────────────────────── */
 #home {
   position: relative;
   min-height: 100vh;
@@ -189,7 +177,6 @@ nav {
   inset: 0;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a0e05 50%, #0a0a0a 100%);
 }
-/* animated diagonal lines */
 .hero-bg::before {
   content: '';
   position: absolute;
@@ -250,7 +237,6 @@ nav {
   background: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900') center/cover no-repeat;
   filter: brightness(0.45) sepia(0.3);
 }
-/* stats bar */
 .stats-bar {
   position: relative;
   z-index: 2;
@@ -286,7 +272,6 @@ nav {
   .hero-image-bg, .hero-image-overlay { width: 0; }
 }
 
-/* ── [CSS] ABOUT SECTION ─────────────────────────────── */
 #about {
   padding: 7rem 0;
   background: var(--bg2);
@@ -339,7 +324,6 @@ nav {
   .about-grid { grid-template-columns: 1fr; }
 }
 
-/* ── [CSS] SERVICES SECTION ──────────────────────────── */
 #services { padding: 7rem 0; }
 .services-header { text-align: center; margin-bottom: 3.5rem; }
 .services-header .section-sub { margin: 0.75rem auto 0; }
@@ -391,7 +375,6 @@ nav {
   .services-grid { grid-template-columns: 1fr; }
 }
 
-/* ── [CSS] PRICING SECTION ───────────────────────────── */
 #pricing {
   padding: 7rem 0;
   background: var(--bg2);
@@ -477,7 +460,6 @@ nav {
   .pricing-card.popular { transform: none; }
 }
 
-/* ── [CSS] CONTACT SECTION ───────────────────────────── */
 #contact { padding: 7rem 0; }
 .contact-header { text-align: center; margin-bottom: 3.5rem; }
 .contact-grid {
@@ -539,7 +521,6 @@ nav {
   .form-row { grid-template-columns: 1fr; }
 }
 
-/* ── [CSS] FOOTER ────────────────────────────────────── */
 footer {
   background: #0d0d0d;
   border-top: 1px solid var(--border);
@@ -557,7 +538,6 @@ footer {
   .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
 }
 
-/* ── [CSS] TOAST NOTIFICATION ────────────────────────── */
 .toast {
   position: fixed;
   bottom: 2rem; right: 2rem;
@@ -575,7 +555,6 @@ footer {
 }
 .toast.show { opacity: 1; transform: translateY(0); }
 
-/* ── [CSS] SCROLL REVEAL ANIMATIONS ─────────────────── */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -587,7 +566,6 @@ footer {
 
 <body>
 
-  <!-- [HTML] NAVIGATION -->
   <nav id="navbar">
     <div class="nav-inner container">
       <a href="#home" class="logo">
@@ -610,7 +588,6 @@ footer {
     </div>
   </nav>
 
-  <!-- [HTML] HERO SECTION -->
   <section id="home">
     <div class="hero-image-bg"></div>
     <div class="hero-image-overlay"></div>
@@ -648,7 +625,6 @@ footer {
     </div>
   </section>
 
-  <!-- [HTML] ABOUT SECTION -->
   <section id="about">
     <div class="container">
       <div class="about-grid">
@@ -695,7 +671,6 @@ footer {
     </div>
   </section>
 
-  <!-- [HTML] SERVICES SECTION -->
   <section id="services">
     <div class="container">
       <div class="services-header reveal">
@@ -750,7 +725,6 @@ footer {
     </div>
   </section>
 
-  <!-- [HTML] PRICING SECTION -->
   <section id="pricing">
     <div class="container">
       <div class="pricing-header reveal">
@@ -811,7 +785,6 @@ footer {
     </div>
   </section>
 
-  <!-- [HTML] CONTACT SECTION -->
   <section id="contact">
     <div class="container">
       <div class="contact-header reveal">
@@ -857,7 +830,7 @@ footer {
             </div>
           </div>
         </div>
-        <!-- [HTML] Contact Form -->
+       
         <div class="reveal">
           <div class="contact-form" id="contactForm">
             <div class="form-row">
@@ -873,7 +846,6 @@ footer {
     </div>
   </section>
 
-  <!-- [HTML] FOOTER -->
   <footer>
     <div class="footer-inner">
       <a href="#home" class="logo" style="font-size:1.1rem;">
@@ -886,11 +858,9 @@ footer {
     </div>
   </footer>
 
-  <!-- [HTML] Toast notification element -->
   <div class="toast" id="toast"></div>
 
 <script>
-// ── [JS] HAMBURGER MENU TOGGLE ────────────────────────
 const hamburger = document.getElementById('hamburger');
 const navLinks  = document.getElementById('navLinks');
 
@@ -898,12 +868,10 @@ hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 
-// Close menu when a nav link is clicked (mobile)
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => navLinks.classList.remove('open'));
 });
 
-// ── [JS] ACTIVE NAV LINK ON SCROLL ───────────────────
 const sections  = document.querySelectorAll('section[id]');
 const allLinks  = document.querySelectorAll('.nav-links a');
 
@@ -919,7 +887,6 @@ function updateActiveLink() {
 }
 window.addEventListener('scroll', updateActiveLink);
 
-// ── [JS] SCROLL REVEAL ANIMATION ─────────────────────
 const revealEls = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver((entries) => {
@@ -937,7 +904,6 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-// ── [JS] TOAST NOTIFICATION ───────────────────────────
 function showToast(msg) {
   const toast = document.getElementById('toast');
   toast.textContent = msg;
@@ -945,7 +911,6 @@ function showToast(msg) {
   setTimeout(() => toast.classList.remove('show'), 3000);
 }
 
-// ── [JS] CONTACT FORM SUBMISSION ─────────────────────
 document.getElementById('sendBtn').addEventListener('click', () => {
   const firstName = document.getElementById('firstName').value.trim();
   const email     = document.getElementById('emailInput').value.trim();
@@ -960,7 +925,6 @@ document.getElementById('sendBtn').addEventListener('click', () => {
     return;
   }
 
-  // Clear form
   document.getElementById('firstName').value  = '';
   document.getElementById('lastName').value   = '';
   document.getElementById('emailInput').value = '';
@@ -969,7 +933,6 @@ document.getElementById('sendBtn').addEventListener('click', () => {
   showToast('Message sent! We\'ll get back to you soon.');
 });
 
-// ── [JS] SMOOTH COUNTER ANIMATION FOR STATS ──────────
 function animateCounter(el, target) {
   let count = 0;
   const step = Math.ceil(target / 60);
