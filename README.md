@@ -10,12 +10,6 @@ A fully responsive single-page gym website built with pure **HTML**, **CSS**, an
 
 ---
 
-## 📸 Preview
-
-![IronPulse Hero Section](https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=900)
-
----
-
 ## ✨ Features
 
 - ✅ Fully Responsive (Mobile, Tablet, Desktop)
